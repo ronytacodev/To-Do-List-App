@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="app-container">
+    <div class="app-container" id="tasklist">
         <h1 class="app-header">VUE TO DO LIST APP</h1>
 
         <div class="add-task">
             <input type="text" placeholder="Add New Task" class="task-input">
-            <input type="submit" class="submit-task" title="Add Task">
+            <input type="submit" value="" class="submit-task" title="Add Task">
         </div>
 
         <ul class="task-list">
@@ -30,6 +30,9 @@
         </ul>
     </div>
 
+    <!-- IMPORT CDN VUE 2.6.11 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
