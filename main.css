@@ -7,7 +7,9 @@
 }
 
 :root {
-    --checkbox-color: rgb(202, 60, 60);
+    /* --checkbox-color: rgb(202, 60, 60);
+     */
+    --checkbox-color: rgb(115, 240, 93);
     --checkbox-shadow: rgba(238, 156, 167, 0.2);
     --add-button: rgba(255, 255, 255, 0.7);
     --add-button-shadow: rgba(238, 156, 167, 0.4);
@@ -63,7 +65,7 @@ ul {
     border: none;
     background: var(--add-button);
     color: #272727;
-    background-image: url(circle.png);
+    background-image: url(assets/circle-plus.svg);
     background-size: 18px;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +111,7 @@ ul {
     height: 16px;
     border: 1px solid #272727;
     border-radius: 50%;
-    background-image: url("check.png");
+    background-image: url(assets/check.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0;
@@ -154,7 +156,7 @@ ul {
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url(trash.png);
+    background-image: url(assets/trash.svg);
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: center;
