@@ -11,21 +11,22 @@
 
 <body>
     <div class="app-container" id="tasklist">
-        <h1 class="app-header">VUE TO DO LIST APP</h1>
+        <h1 class="app-header">Vue TO DO LIST </h1>
 
         <div class="add-task">
-            <input type="text" placeholder="Add New Task" class="task-input">
-            <input type="submit" value="" class="submit-task" title="Add Task">
+            <input type="text" autocomplete="off" placeholder="Add New Task" class="task-input" v-model="tasks.name"
+                @keyup.enter="newItem">
+            <input type="submit" value="" class="submit-task" title="Add Task" @click="newItem">
         </div>
 
         <ul class="task-list">
-            <li class="task-list-item">
+            <li class="task-list-item" v-for="task in tasks">
                 <label class="task-list-item-label">
                     <input type="checkbox">
-                    <span>Task</span>
+                    <span>{{task.name}}</span>
                 </label>
 
-                <span class="delete-btn" title="Delete Task"></span>
+                <span class="delete-btn" title="Delete Task" @click="delItem(task)">{{task.del}}</span>
             </li>
         </ul>
     </div>
